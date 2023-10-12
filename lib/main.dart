@@ -4,15 +4,9 @@ import 'package:ika_musaka/provider/UtilisateurProvider.dart';
 import 'package:ika_musaka/screens/ConnexionScreen.dart';
 import 'package:ika_musaka/screens/ProfilUtilisateur.dart';
 import 'package:provider/provider.dart';
-
-
-import 'package:get/get.dart';
-import 'package:ika_musaka/screens/ConnexionScreen.dart';
-import 'package:ika_musaka/screens/accueil.dart';
 import 'package:ika_musaka/screens/bottomNavigatorBar.dart';
 import 'package:ika_musaka/services/BottomNavigationService.dart';
 import 'package:ika_musaka/services/budgetService.dart';
-import 'package:provider/provider.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -42,13 +36,13 @@ class _MyAppState extends State<MyApp> {
     return  MaterialApp(
         routes: {
           '/profilUtilisateur': (context) => ProfilUtilisateur(),
-          '/BottomNavigationPage':(context) => BottomNavigationPage(),
+          '/BottomNavigationPage':(context) => const BottomNavigationPage(),
           // Autres routes...
         },
       // title: "LogIn Screen",
       debugShowCheckedModeBanner: false,
       // home: BottomNavigationPage(),
-      home: Connexion(),
+      home:const Connexion(),
     );//Place SignUp function here to Observe SignUp Screen.
   }
   //adama

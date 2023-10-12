@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "730297663367",
+    "project_id": "musaka-d9ae2",
+    "storage_bucket": "musaka-d9ae2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730297663367:android:df5823653e77a54b6e5d22",
+        "android_client_info": {
+          "package_name": "com.example.ika_musaka"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp6yoomT7nQ4ZxY6__tSZ8YJiSNeTyQ5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

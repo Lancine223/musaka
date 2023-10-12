@@ -32,6 +32,7 @@ class BudgetService extends ChangeNotifier {
     }else{
       throw Exception(jsonDecode(utf8.decode(response.bodyBytes))["message"]);
     }
+    
   }
 
   Future<void> deleteBudgetById(String endpoint) async{

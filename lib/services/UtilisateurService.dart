@@ -26,7 +26,7 @@ class UtilisateurService {
       //request.files.add(await http.MultipartFile.fromPath("photos", photos.path));
       if(photos != null){
         request.files.add(http.MultipartFile('photo',photos.readAsBytes().asStream(),photos.lengthSync(),filename : basename(photos.path)));
-        debugPrint("MMM======== "+photos.path);
+        // debugPrint("MMM======== "+photos.path);
       }
 
       // Ajoutez les autres champs requis à la requête

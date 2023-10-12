@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:ika_musaka/screens/ProfilUtilisateur.dart';
 import 'package:ika_musaka/screens/accueil.dart';
 import 'package:ika_musaka/screens/budgetListe.dart';
 import 'package:ika_musaka/services/BottomNavigationService.dart';
@@ -64,6 +65,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
               children: [
                 _buildOffstageNavigator(0),
                 _buildOffstageNavigator(1),
+                _buildOffstageNavigator(2),
               ],
             );
           }
@@ -119,7 +121,8 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
       '/': (context) {
         return [
           const Accueil(),
-          const BudgetListe()
+          const BudgetListe(),
+          const ProfilUtilisateur(),
         ].elementAt(index);
       },
     };

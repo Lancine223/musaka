@@ -4,22 +4,20 @@ import 'package:flutter/material.dart';
 import '../model/utilisateur.dart';
 
 class ProfilUtilisateur extends StatelessWidget {
+  const ProfilUtilisateur({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Récupérer les données de l'utilisateur passées en argument.
     final utilisateur = ModalRoute.of(context)!.settings.arguments as Utilisateur;
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Profil de ${utilisateur.prenom}'),
-      ),
-      body: Column(
+    return Column(
         children: [
            Stack(
                     children: <Widget>[
                       
                       SizedBox(
-                        child: Container(
+                        child: SizedBox(
                           height: 250,
                           width: 600,
                           child: ClipRRect(
@@ -40,7 +38,6 @@ class ProfilUtilisateur extends StatelessWidget {
           Text('Email: ${utilisateur.email}'),
           // Autres informations de l'utilisateur...
         ],
-      ),
-    );
+      );
   }
 }
