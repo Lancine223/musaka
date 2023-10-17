@@ -110,7 +110,7 @@ class _ConnexionState extends State<Connexion> {
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  child:  Text('OK'),
+                  child: Text('OK'),
                 ),
               ],
             );
@@ -236,12 +236,12 @@ class _ConnexionState extends State<Connexion> {
                         color: Colors.white,
                         
                         boxShadow: [
-                          BoxShadow(
+                           BoxShadow(
                             // color: Colors.grey.withOpacity(0.5),
                             color: Color(0xffffffff),
                             spreadRadius: 5,
                             blurRadius: 7,
-                            offset: const Offset(0, 3),
+                            offset: Offset(0, 3),
                             
                           ),
                         ]),
